@@ -58,6 +58,7 @@ databaseChangeLog:
             oldTableName: article
             newTableName: new_article
 
+
   - changeSet:
       id: dev-4
       author: uadonetc
