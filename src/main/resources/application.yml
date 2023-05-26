@@ -5,8 +5,8 @@
       username: postgres
       password: root
 
-  liquidbase:
-      change-log: classpath:liquidbase/changelog.yml
+  liquibase:
+    change-log: classpath:resources/db/changelog/db.changelog-master.yaml
 
 
 

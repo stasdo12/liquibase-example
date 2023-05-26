@@ -1,6 +1,0 @@
-    databaseChangeLog:
-      -changeSet:
-        id: Dev-1
-        author: ua.donetc
-        changes:
-          -createTable:

@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: dev-1
+      author: uadonetc
+      changes:
+        - createTable:
+            tableName: article
+            remarks: Articles
+            columns:
+              - column:
+                  name: id
+                  type: integer
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: article_pk
+                    nullable: false
+              - column:
+                  name: url
+                  remarks: Link to the Article
+                  type: varchar(50)
+                  constraints:
+                    unique: true
+                    uniqueConstraintName: article_url_uq
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_visible
+                  type: boolean
+                  defaultValue: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created
+                  type: timestamp without time zone
+                  defaultValue: now()
+                  constraints:
+                    nullable: false
