@@ -1,0 +1,13 @@
+  spring:
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/alishev
+      username: postgres
+      password: root
+
+  liquidbase:
+      change-log: classpath:liquidbase/changelog.yml
+
+
+
+
