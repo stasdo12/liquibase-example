@@ -49,3 +49,19 @@ databaseChangeLog:
             oldColumnName: title
             newColumnName: header
             tableName: article
+
+  - changeSet:
+      id: dev-3
+      author: uadonetc
+      changes:
+        - renameTable:
+            oldTableName: article
+            newTableName: new_article
+
+  - changeSet:
+      id: dev-4
+      author: uadonetc
+      changes:
+        - dropColumn:
+            tableName: new_article
+            columnName: is_visible
