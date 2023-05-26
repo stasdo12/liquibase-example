@@ -40,3 +40,12 @@ databaseChangeLog:
                   defaultValue: now()
                   constraints:
                     nullable: false
+
+  - changeSet:
+      id: dev-2
+      author: uadonetc
+      changes:
+        - renameColumn:
+            oldColumnName: title
+            newColumnName: header
+            tableName: article
